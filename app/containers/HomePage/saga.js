@@ -17,6 +17,7 @@ export function* getCryptos() {
     symbols: JSON.stringify(CRYPTO_SYMBOLS),
   };
   const requestURL = `/api/v3/ticker/24hrs?${serialize(params)}`;
+  //const requestURL = `/todoitems?${serialize(params)}`;
 
   try {
     // Call our request helper (see 'utils/request')
